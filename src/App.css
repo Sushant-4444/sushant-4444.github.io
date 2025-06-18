@@ -1,0 +1,326 @@
+
+/* Custom coral colors for the component */
+.bg-coral-100 {
+  background-color: #ffe4e1;
+}
+
+.bg-coral-200 {
+  background-color: #ffb3b3;
+}
+
+.bg-coral-400 {
+  background-color: #ff7875;
+}
+
+.bg-coral-500 {
+  background-color: #ff6b6b;
+}
+
+.text-coral-500 {
+  color: #ff6b6b;
+}
+
+.text-coral-600 {
+  color: #f56565;
+}
+
+.stroke-coral-500 {
+  stroke: #ff6b6b;
+}
+
+.stroke-purple-500 {
+  stroke: #8b5cf6;
+}
+
+.text-purple-500 {
+  color: #8b5cf6;
+}
+
+.text-purple-600 {
+  color: #7c3aed;
+}
+
+.text-purple-700 {
+  color: #6d28d9;
+}
+
+.bg-purple-100 {
+  background-color: #ede9fe;
+}
+
+.shadow-coral-500\/20 {
+  box-shadow: 0 25px 50px -12px rgba(255, 107, 107, 0.2);
+}
+
+/* 3D Transform utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  transform-style: preserve-3d;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* 3D Text Effects */
+.text-3d {
+  transform: translateZ(20px);
+  transition: all 0.3s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-3d-title {
+  transform: translateZ(30px);
+  transition: all 0.3s ease;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.text-3d-description {
+  transform: translateZ(15px);
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.icon-3d {
+  transform: translateZ(40px);
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.button-3d {
+  transform: translateZ(25px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effects for enhanced 3D */
+.flip-card:hover .text-3d {
+  transform: translateZ(25px);
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.flip-card:hover .text-3d-title {
+  transform: translateZ(40px);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .text-3d-description {
+  transform: translateZ(20px);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.flip-card:hover .icon-3d {
+  transform: translateZ(50px) scale(1.1);
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15));
+}
+
+.flip-card:hover .button-3d {
+  transform: translateZ(35px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Back side 3D text effects */
+.flip-card-back .text-3d {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.flip-card-back .text-3d-title {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.flip-card-back .text-3d-description {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.flip-card-back .icon-3d {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.flip-card-back .button-3d {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom keyframes for enhanced animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce-gentle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Utility classes for animations */
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.6s ease-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2s ease-in-out infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Container styles */
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced focus styles */
+*:focus {
+  outline: 2px solid #ff6b6b;
+  outline-offset: 2px;
+}
+
+/* Custom hover effects */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
