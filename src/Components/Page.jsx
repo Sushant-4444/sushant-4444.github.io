@@ -42,7 +42,7 @@ const PortfolioHero = ({ onToggleSidebar }) => {
           {/* Left content */}
           <div className="lg:col-span-4 space-y-6 text-center lg:text-left lg:pr-8">
             <div>
-              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">My Self,</h1>
+              <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">MySelf,</h1>
               <h2 className="text-4xl lg:text-5xl font-bold text-coral-500">Sushant Arora</h2>
             </div>
 
@@ -52,9 +52,23 @@ const PortfolioHero = ({ onToggleSidebar }) => {
 Let’s build something awesome together.
             </p>
 
-            <button className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-2 rounded-full transition-colors duration-300 font-medium focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2">
-              Download CV
+            <button
+              className="border-2 border-gray-800 text-gray-800 hover:bg-gray-800 hover:text-white px-8 py-2 rounded-full transition-colors duration-300 font-medium focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2"
+              onClick={() => {
+                const link = document.getElementById('hidden-cv-link');
+                if (link) link.click();
+              }}
+            >
+              Download Resume
             </button>
+            <a
+              href="/Resume.pdf"
+              download
+              style={{ display: 'none' }}
+              id="hidden-cv-link"
+            >
+              Download
+            </a>
           </div>
 
           {/* Center image */}
@@ -92,7 +106,7 @@ Let’s build something awesome together.
           {/* Right content */}
           <div className="lg:col-span-4 text-center lg:text-left lg:pl-8">
             <div className="space-y-2">
-              <p className="text-2xl lg:text-3xl text-gray-900">I am a</p>
+              <p className="text-2xl lg:text-3xl text-gray-900">I am an</p>
               <div className="relative inline-block">
                 <p className="text-2xl lg:text-3xl text-purple-600 font-medium">Engineer</p>
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-purple-600 rounded"></div>
