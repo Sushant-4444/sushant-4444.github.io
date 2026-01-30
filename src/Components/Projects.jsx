@@ -428,6 +428,89 @@ const Projects = () => {
       "Score tracking",
       "Interactive gameplay",
     ],
+  },
+  {
+    "id": 5,
+    "title": "Aventis Consultancy Website",
+    "category": "Web Development",
+    "description": "Enterprise-grade responsive website for SAP consultancy services.",
+    "fullDescription": "Architected and deployed a professional ReactJS platform for Aventis Consultancy. The site features complex service listings and was validated to handle 1000 concurrent users in a production environment, significantly boosting client engagement.",
+    "date": "Jun 2025",
+    "client": "Aventis Consultancy",
+    "tech": "ReactJS, Tailwind CSS",
+    "type": "Corporate Website",
+    "url": "www.aventis-consultancy.com/",
+    "image": "/aventis.png",
+    "filterCategory": "DEVELOPMENT",
+    "features": [
+      "High-concurrency optimization",
+      "Responsive enterprise UI",
+      "Service-specific landing pages",
+      "Production-ready deployment"
+    ]
+  },
+  {
+    "id": 6,
+    "title": "AISS25 Official Website",
+    "category": "Web Development",
+    "description": "Flagship event website for the CAI Department at IIIT-Delhi.",
+    "fullDescription": "Developed the official digital platform for the AI Summer School (AISS25). Focused on delivering a high-performance user experience for researchers and students, integrating event schedules, speaker profiles, and registration details.",
+    "date": "Jun 2025",
+    "client": "CAI Department, IIIT-Delhi",
+    "tech": "ReactJS, Tailwind CSS",
+    "type": "Event Management Platform",
+    "url": "aiss.iiitd.edu.in",
+    "image": "/aiss.png",
+    "filterCategory": "DEVELOPMENT",
+    "features": [
+      "Dynamic schedule integration",
+      "Speaker highlight modules",
+      "Optimized assets for fast loading",
+      "Mobile-first design",
+      "Interactive FAQ section"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "1px Design Conference Website",
+    "category": "Web Development",
+    "description": "Official platform for the premier design conference at IIIT-Delhi.",
+    "fullDescription": "Engineered a visually driven website for the 1px Design Conference. The project emphasizes aesthetic precision and smooth animations to reflect the conference's focus on high-quality UI/UX design.",
+    "date": "2024",
+    "client": "1px Design Club",
+    "tech": "ReactJS, CSS Animations",
+    "type": "Conference Website",
+    "url": "1pxdesignconf.iiitd.edu.in/",
+    "image": "/1px.png",
+    "filterCategory": "DEVELOPMENT",
+    "features": [
+      "Advanced CSS animations",
+      "Aesthetic-centric UI",
+      "Cross-browser compatibility",
+      "Event registration flow",
+      "Sponsor showcase layout"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "CyFuse Tech Club Website",
+    "category": "Web Development",
+    "description": "Central hub for the technical community at IIIT-Delhi.",
+    "fullDescription": "As an Interim Coordinator, led the development of the CyFuse club website. The platform serves as a central repository for technical resources, event archives, and member recruitment for the college tech community.",
+    "date": "Aug 2024 – Present",
+    "client": "CyFuse (Tech Club)",
+    "tech": "ReactJS, CSS, Git",
+    "type": "Community Hub",
+    "url": "cyfuse.iiitd.edu.in/", 
+    "image": "/cyfuse.png",
+    "filterCategory": "DEVELOPMENT",
+    "features": [
+      "Club membership management",
+      "Project archival system",
+      "Event timeline integration",
+      "Collaborative development",
+      "Resource sharing portal"
+    ]
   }
 
   ]
